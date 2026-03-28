@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zeehan Shaik | Portfolio</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+}
+
+/* NAVBAR */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background: rgba(0,0,0,0.4);
+    z-index: 1000;
+}
+
+nav h2 {
+    color: #00e5ff;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00e5ff;
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 40px;
+}
+
+.hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #00e5ff;
+    box-shadow: 0 0 40px rgba(0,229,255,0.6);
+}
+
+.hero-text h1 {
+    font-size: 48px;
+}
+
+.hero-text span {
+    color: #00e5ff;
+}
+
+.hero-text p {
+    margin: 15px 0 25px;
+    font-size: 18px;
+    max-width: 500px;
+}
+
+.hero-text a {
+    padding: 12px 25px;
+    background: #00e5ff;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.hero-text a:hover {
+    background: #00bcd4;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #00e5ff;
+}
+
+/* GLASS CARD */
+.card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+/* EDUCATION */
+.edu-grid, .skills-grid, .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* SKILLS */
+.skills-grid ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #ccc;
+    background: rgba(0,0,0,0.4);
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>Zeehan</h2>
+    <div>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <img src="profile.jpg/profile.jpg" alt="Profile Image">
+        <div class="hero-text">
+            <h1>Hi, I'm <span>Zeehan Shaik</span></h1>
+            <p>
+                Web Developer & Software Engineer passionate about building
+                modern, scalable, and user-friendly applications.
+            </p>
+            <a href="#contact">Get In Touch</a>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        I am a motivated software developer with strong problem-solving skills
+        and interest in modern web technologies and real-world applications.
+        And I am a keen Learner who always like to learn new things and upgrade my knowledge time by time.
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <h2>Education</h2>
+    <div class="edu-grid">
+        <div class="card">
+            <h3>B.Tech – CSE</h3>
+            <p>SIMATS Engineering</p>
+            <p>2021 – 2025</p>
+            <p>CGPA: 8.17</p>
+        </div>
+
+        <div class="card">
+            <h3>Intermediate</h3>
+            <p>Viswasai Jr. College</p>
+            <p>2018 – 2020</p>
+            <p>CGPA: 9.0</p>
+        </div>
+
+        <div class="card">
+            <h3>Secondary School</h3>
+            <p>Little Buds E.M. School</p>
+            <p>2017 – 2018</p>
+            <p>CGPA: 9.7</p>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div class="card">
+            <h3>Frontend</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Backend</h3>
+            <ul>
+                <li>Java</li>
+                <li>Python</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Database</h3>
+            <ul>
+                <li>SQL</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+        <div class="card">Portfolio Website</div>
+        <div class="card">Fall Detection System (Python)</div>
+        <div class="card">Duplicate Image Detection (Deep Learning)</div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: zeehanshaik20@email.com</p>
+        <p>LinkedIn: linkedin.com/in/zeehan-shaik</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Zeehan Shaik | Portfolio
+</footer>
+
+</body>
+</html>
